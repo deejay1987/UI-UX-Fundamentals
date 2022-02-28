@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#wrapper {
+  background: white;
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px auto;
+  max-height: 500px;
+  max-width: 774px;
+  position: relative;
+}
+#wrapper ul {
+  width: 100%;
+}
+#wrapper ul .container_cards {
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  display: flex;
+  margin: auto;
+  padding: 40px;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 600px;
+}
+#wrapper ul .container_cards.active {
+  opacity: 1;
+  visibility: visible;
+}
+#wrapper ul .container_cards img {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+#wrapper ul .container_cards .person_details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 18px;
+}
+#wrapper ul .container_cards .person_details h4,
+#wrapper ul .container_cards .person_details p {
+  color: grey;
+}
+#wrapper ul .container_cards .person_details p {
+  margin-top: 24px;
+}
+.action_btn {
+  border: none;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 380px;
+  right: 90px;
+}
+.action_btn::after {
+  color: black;
+  content: "|";
+  position: absolute;
+  right: 59px;
+  top: 0px;
+  width: 2px;
+  z-index: 100;
+}
+.action_btn .btn {
+  background-color: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+  padding: 5px 10px;
+}
